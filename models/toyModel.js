@@ -6,7 +6,11 @@ const toySchema = new mongoose.Schema({
   info: String,
   category: String,
   img_url: String,
-  price: Number
+  price: Number,
+  user_id:String,
+  date_created: {
+    type:Date, default: Date.now()
+  }
 })
 
 exports.ToyModel = mongoose.model("toys", toySchema);

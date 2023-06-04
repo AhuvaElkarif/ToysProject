@@ -7,6 +7,9 @@ const userSchema = new mongoose.Schema({
     name: String,
     email: String,
     password: String,
+    role: {
+        type: String, default: "user"
+    },
     date_created: {
         type: Date, default: Date.now()
     }
@@ -23,8 +26,8 @@ exports.userValid = (_reqBody) => {
     return joiSchema.validate(_reqBody);
 }
 
-exports.genToken = (_userId) => {
-    let token = jwt.sign({ _id: _userId }, config.tokenSecretDb, { expiresIn: "60min" });
+exports.genToken = (_userId, _role) => {
+    let token = jwt.sign({ _id: _userId , role: _role}, config.tokenSecretDb, { expiresIn: "60min" });
     return token;
 }
 
