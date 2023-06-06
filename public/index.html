@@ -59,7 +59,7 @@
                 <div class="shadow d-flex align-text-top justify-content-center topPic text-white "> </div>
             </div>
             <div id="user_id" class="text-center">
-                <h2 class="display-4 text-center pb-3 text-danger">
+                <h2 class="text-center pb-3 text-danger fs-1">
                   U S E R - R O U T E R
 
                 </h2>
@@ -72,7 +72,7 @@
             <table class="table table-bordered table-striped ">
                 <h4 class="mb-3 text-center bigDomain">
                    D o m a i n :
-                    <span class="text-info text fw-bold" id="Domain">https://toysproject.onrender.com</span>
+                    <span class="text-primary text fw-bold" id="Domain">https://toysproject.onrender.com</span>
                     <button class="btn mx-2 copyBtn" id="domainbtn"><i class="bi bi-files"></i></button>
                 </h4>
 
@@ -88,13 +88,13 @@
                 <tbody>
                     <tr>
                         <td>GET</td>
-                        <td><a href="/users/myInfo">/users/myInfo</a></td>
+                        <td><a href="/users/myInfo" target="_blank">/users/myInfo</a></td>
                         <td class="text-center">none</td>
                         <td>Get your own info - by token.</td>
                     </tr>
                     <tr>
                         <td>GET</td>
-                        <td><a href="/users/usersList">/users/usersList</a></td>
+                        <td><a href="/users/usersList" target="_blank">/users/usersList</a></td>
                         <td class="text-center">none</td>
                         <td>Get list of all users - by token admin.</td>
                     </tr>
@@ -110,7 +110,7 @@ name:"Ahuva Elkarif"
 } </pre>
                         </td>
                         <td>Add a new user to the data base ,<a class="text-decoration-none"
-                                href="https://github.com/AhuvaElkarif/ToysProject/blob/master/models/userModel.js">if
+                                href="https://github.com/AhuvaElkarif/ToysProject/blob/master/models/userModel.js" target="_blank">if
                                 you want to see the template of valid user.</a></td>
                     </tr>
                     <tr>
@@ -125,7 +125,7 @@ name:"Ahuva Elkarif"
                         </td>
                         <td>User login, if the email and password are correct the server will respond with a token,<br>
                             <a class="text-decoration-none"
-                                href="https://github.com/AhuvaElkarif/ToysProject/blob/master/models/userModel.js">if
+                                href="https://github.com/AhuvaElkarif/ToysProject/blob/master/models/userModel.js" target="_blank">if
                                 you want to see the template of valid user.</a>
                         </td>
                     </tr>
@@ -159,7 +159,7 @@ name:"Ahuva Elkarif"
         <!-- table 2 -->
         <div class="container">
             <div id="toy_id" class="text-center m-3">
-                <h2 class="display-4 text-center py-2 text-danger">
+                <h2 class="text-center py-2 text-danger fs-1">
                    T O Y S - R O U T E R
 
                 </h2>
@@ -185,7 +185,7 @@ name:"Ahuva Elkarif"
             <table class="table table-bordered table-striped mb-3">
                 <h4 class="mb-3 text-center bigDomain">
                     D o m a i n :
-                    <span class="text-info text fw-bold" id="Domain">https://toysproject.onrender.com</span>
+                    <span class="text-primary text fw-bold" id="Domain">https://toysproject.onrender.com</span>
                     <button class="btn mx-2 copyBtn" id="domainbtn2"><i class="bi bi-files"></i></button>
                 </h4>
                 <thead class="table-dark">
@@ -199,19 +199,19 @@ name:"Ahuva Elkarif"
                 <tbody>
                     <tr>
                         <td>GET</td>
-                        <td><a href="https://toysproject.onrender.com/toys">/toys</a></td>
+                        <td><a href="https://toysproject.onrender.com/toys" target="_blank">/toys</a></td>
                         <td class="text-center">none</td>
                         <td>Get a list of all the toys, will present 10 results per page.</td>
                     </tr>
                     <tr>
                         <td>GET</td>
-                        <td><a href="https://toysproject.onrender.com/toys/single/:id">/toys/single/:id</a></td>
+                        <td><a href="https://toysproject.onrender.com/toys/single/:id" target="_blank">/toys/single/:id</a></td>
                         <td class="text-center">none</td>
                         <td>Get a single toy, by id.</td>
                     </tr>
                     <tr>
                         <td>GET</td>
-                        <td><a href="https://toysproject.onrender.com/toys/search?s=doll">/toys/search?s=doll</a></td>
+                        <td><a href="https://toysproject.onrender.com/toys/search?s=doll" target="_blank">/toys/search?s=doll</a></td>
                         <td class="text-center">none</td>
                         <td>search for a toy by searching follwing name or info after the "s=", it will present 10
                             results per page.
@@ -220,14 +220,14 @@ name:"Ahuva Elkarif"
                     <tr>
                         <td>GET</td>
                         <td><a
-                                href="https://toysproject.onrender.com/toys/prices?min=50&max=200">/toys/prices?min=50&max=200</a>
+                                href="https://toysproject.onrender.com/toys/prices?min=50&max=200" target="_blank">/toys/prices?min=50&max=200</a>
                         </td>
                         <td class="text-center">none</td>
                         <td>Get a list of the toys by min & max , it will present 10 results per page.</td>
                     </tr>
                     <tr>
                         <td>GET</td>
-                        <td><a href="https://toysproject.onrender.com/toys/category/ball">/toys/category/:catName</a></td>
+                        <td><a href="https://toysproject.onrender.com/toys/category/ball" target="_blank">/toys/category/:catName</a></td>
                         <td class="text-center">none</td>
                         <td>Get a list of all the toys in toys <strong>category</strong>, it will present 10 results per
                             page.</td>
@@ -251,7 +251,7 @@ name:"Ahuva Elkarif"
                         </td>
                         <td>Add a new toy to the data base, <strong>You need a token for this query ,</strong><br>
                             <a class="text-decoration-none"
-                                href="https://github.com/AhuvaElkarif/ToysProject/blob/master/models/toyModel.js">if
+                                href="https://github.com/AhuvaElkarif/ToysProject/blob/master/models/toyModel.js" target="_blank">if
                                 you want to see the template of valid toy</a>
                         </td>
                     </tr>
@@ -287,7 +287,7 @@ name:"Ahuva Elkarif"
     <!-- footer start -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
         <div class="col-md-4 d-flex align-items-center ms-4">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" target="_blank">
                 <svg class="bi" width="30" height="24">
                     <use xlink:href="#bootstrap"></use>
                 </svg>
@@ -296,11 +296,11 @@ name:"Ahuva Elkarif"
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
-            <li class="ms-3"><a class="text-muted" href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i>
+            <li class="ms-3"><a class="text-muted" href="https://www.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i>
                 </a></li>
-            <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i>
+            <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i>
                 </a></li>
-            <li class="ms-3"><a class="text-muted" href="https://github.com/AhuvaElkarif/ToysProject "><i
+            <li class="ms-3"><a class="text-muted" href="https://github.com/AhuvaElkarif/ToysProject " target="_blank"><i
                         class="bi bi-github"></i>
                 </a></li>
         </ul>
